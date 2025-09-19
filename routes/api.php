@@ -9,6 +9,6 @@ use App\Http\Controllers\UsuariosController;
 Route::post('/login', [AutenticacionController::class, 'login']);
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::apiResource('products', ProductosController::class);
+    Route::apiResource('productos', ProductosController::class);
     Route::apiResource('users', UsuariosController::class);
 });
